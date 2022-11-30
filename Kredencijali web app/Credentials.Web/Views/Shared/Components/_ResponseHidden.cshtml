@@ -1,0 +1,11 @@
+﻿@if (TempData["Response"] != null)
+{
+    if (TempData["Response"].Equals(true))
+    {
+        <input type="hidden" id="success" value="@TempData["ResponseMessage"]" />
+    }
+    else
+    {
+        <input type="hidden" id="error" value="@TempData["ResponseMessage"]" />
+    }
+}

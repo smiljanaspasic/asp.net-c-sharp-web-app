@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link href="~/vendors/toastr/toastr.css" rel="stylesheet" />
+
+<partial name="../Shared/Components/_ResponseHidden" />
+
+<div class="text-center">
+    <h1 class="display-4">Dobro dosli na mesto gde su smesteni svi Vasi kredencijali</h1>
+    <p>Kliknite na ikonicu Credentials sa leve strane za pregled Vasih kredencijala</p>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/vendors/toastr/toastr.js"></script>
+    <script src="~/js/pluginOptions/toastrOptions.js"></script>
+    <script src="~/js/site.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            customInitToastr($("#error").val(), $("#success").val());
+        });
+    </script>
+}

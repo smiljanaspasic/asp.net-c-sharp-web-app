@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credentials.Data", "Credentials.Data\Credentials.Data.csproj", "{41863D03-F130-4210-B06C-AA1C78A81154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credentials.Web", "Credentials.Web\Credentials.Web.csproj", "{449CC652-2B93-47B3-A11B-241CDA92BA2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41863D03-F130-4210-B06C-AA1C78A81154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41863D03-F130-4210-B06C-AA1C78A81154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41863D03-F130-4210-B06C-AA1C78A81154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41863D03-F130-4210-B06C-AA1C78A81154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449CC652-2B93-47B3-A11B-241CDA92BA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449CC652-2B93-47B3-A11B-241CDA92BA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449CC652-2B93-47B3-A11B-241CDA92BA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449CC652-2B93-47B3-A11B-241CDA92BA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23C79B4B-A11A-42DC-81B7-AF95F6F2ABA1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+﻿@model Credentials.Web.Models.KredencijaliModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Kreiranje novih kredencijala</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+           
+            <div class="form-group">
+                <label asp-for="KorisnickoIme" class="control-label"></label>
+                <input asp-for="KorisnickoIme" class="form-control" />
+                <span asp-validation-for="KorisnickoIme" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lozinka" class="control-label"></label>
+                <input asp-for="Lozinka" class="form-control" />
+                <span asp-validation-for="Lozinka" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Aplikacija" class="control-label"></label>
+                <input asp-for="Aplikacija" class="form-control" />
+                <span asp-validation-for="Aplikacija" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IPAdresa" class="control-label"></label>
+                <input asp-for="IPAdresa" class="form-control" />
+                <span asp-validation-for="IPAdresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uredjaj" class="control-label"></label>
+                <input asp-for="Uredjaj" class="form-control" />
+                <span asp-validation-for="Uredjaj" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Kredencijali">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
